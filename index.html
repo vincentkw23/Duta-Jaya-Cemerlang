@@ -720,10 +720,10 @@
             <nav>
                 <a href="#home" id="nav-home">Beranda</a>
                 <a href="#about" id="nav-about">Tentang Kami</a>
-                <a href="#rfq" id="nav-rfq">Kalkulator RFQ</a>
                 <a href="#facility" id="nav-facility">Fasilitas Pabrik</a>
                 <a href="#specifications" id="nav-spec">Panduan Material</a>
                 <a href="#products" id="nav-prod">Produk & Layanan</a>
+                <a href="#rfq" id="nav-rfq">Kalkulator RFQ</a>
                 <a href="#process" id="nav-process">Alur Pemesanan</a>
                 <a href="#contact" id="nav-contact">Kontak</a>
             </nav>
@@ -731,6 +731,7 @@
         </header>
     </div>
 
+    <!-- 1. BERANDA -->
     <section class="hero" id="home">
         <h1 class="reveal" id="hero-title">Pabrik & Produsen Karton Box Industri Terpercaya</h1>
         <p class="reveal delay-1" id="hero-desc">Solusi kemasan kardus corrugated berkualitas tinggi untuk kebutuhan industri & pabrik skala besar. Siap melayani pengiriman ke seluruh Pulau Jawa.</p>
@@ -756,6 +757,7 @@
         </div>
     </section>
 
+    <!-- 2. TENTANG KAMI -->
     <section class="section" id="about">
         <h2 class="section-title reveal" id="about-title">Tentang CV. Duta Jaya Cemerlang</h2>
         <div class="about-container" style="margin-top: 20px;">
@@ -770,91 +772,7 @@
         </div>
     </section>
 
-    <!-- FORMULIR & KALKULATOR RFQ INTERAKTIF -->
-    <section class="section" style="background-color: #F7F3EE;" id="rfq">
-        <h2 class="section-title reveal" id="rfq-title">Formulir & Kalkulator Permintaan Penawaran (RFQ)</h2>
-        <p class="section-subtitle reveal delay-1" id="rfq-subtitle">Masukkan spesifikasi kardus yang Anda butuhkan untuk mendapatkan estimasi harga terbaik dari tim Sales kami.</p>
-
-        <div class="rfq-container reveal delay-2">
-            <form id="rfqForm">
-                <div class="rfq-grid">
-                    <div class="form-group">
-                        <label for="nama" id="lbl-nama">Nama / Perusahaan *</label>
-                        <input type="text" id="nama" required placeholder="Contoh: PT. Maju Bersama / Bpk. Budi">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="telepon" id="lbl-telepon">Nomor WhatsApp *</label>
-                        <input type="tel" id="telepon" required placeholder="Contoh: 08123456789">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="panjang" id="lbl-panjang">Panjang (cm) *</label>
-                        <input type="number" id="panjang" step="0.1" min="1" required placeholder="misal: 40">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="lebar" id="lbl-lebar">Lebar (cm) *</label>
-                        <input type="number" id="lebar" step="0.1" min="1" required placeholder="misal: 30">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="tinggi" id="lbl-tinggi">Tinggi (cm) *</label>
-                        <input type="number" id="tinggi" step="0.1" min="1" required placeholder="misal: 25">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="tipeKardus" id="lbl-tipeKardus">Tipe Kardus *</label>
-                        <select id="tipeKardus" required>
-                            <option value="">-- Pilih Tipe Kardus --</option>
-                            <option value="Single Wall (3-Ply)">Single Wall (3-Ply)</option>
-                            <option value="Double Wall (5-Ply)">Double Wall (5-Ply)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="tipeFlute" id="lbl-tipeFlute">Tipe Flute *</label>
-                        <select id="tipeFlute" required>
-                            <option value="">-- Pilih Flute --</option>
-                            <option value="E-Flute (± 1.2 - 1.5 mm)">E-Flute (± 1.2 - 1.5 mm)</option>
-                            <option value="B-Flute (± 2.5 - 3.0 mm)">B-Flute (± 2.5 - 3.0 mm)</option>
-                            <option value="C-Flute (± 3.6 - 4.0 mm)">C-Flute (± 3.6 - 4.0 mm)</option>
-                            <option value="A-Flute (± 4.5 - 5.0 mm)">A-Flute (± 4.5 - 5.0 mm)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="sablonOption" id="lbl-sablonOption">Cetak Sablon / Printing *</label>
-                        <select id="sablonOption" required onchange="toggleColorOption(this.value)">
-                            <option value="">-- Pilih Opsi Sablon --</option>
-                            <option value="Tidak">Tidak</option>
-                            <option value="Ya">Ya</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group" id="colorGroup" style="display: none;">
-                        <label for="colorOption" id="lbl-colorOption">Pilihan Warna Sablon *</label>
-                        <select id="colorOption">
-                            <option value="Tidak Berwarna (Hitam/Putih)">Tidak Berwarna (Hitam/Putih)</option>
-                            <option value="Berwarna (Custom Color)">Berwarna (Custom Color)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="jumlah" id="lbl-jumlah">Jumlah Pemesanan (Pcs) *</label>
-                        <input type="number" id="jumlah" min="1" required placeholder="misal: 1000">
-                    </div>
-
-                    <div class="form-group full-width" style="margin-top: 10px;">
-                        <button type="submit" id="btnSubmit" class="btn-submit-rfq">
-                            <span id="btn-submit-text">📲 Kirim Permintaan RFQ ke WhatsApp</span>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-
+    <!-- 3. FASILITAS PABRIK -->
     <section class="section" style="background-color: #F8F5F0;" id="facility">
         <h2 class="section-title reveal" id="gallery-title">Fasilitas & Mesin Produksi Modern</h2>
         <p class="section-subtitle reveal delay-1" id="gallery-subtitle">Didukung oleh armada mesin pabrik yang siap memproses pesanan kardus skala besar dengan presisi tinggi.</p>
@@ -912,6 +830,7 @@
         </div>
     </section>
 
+    <!-- 4. PANDUAN MATERIAL -->
     <section class="section" id="specifications">
         <h2 class="section-title reveal" id="spec-title">Panduan Material & Spesifikasi Kardus</h2>
         <p class="section-subtitle reveal delay-1" id="spec-subtitle">Pelajari tipe konstruksi dan jenis gelombang kardus untuk menemukan pilihan terbaik sesuai kebutuhan produk industri Anda.</p>
@@ -1019,6 +938,7 @@
         </div>
     </section>
 
+    <!-- 5. PRODUK & LAYANAN -->
     <section class="section" style="background-color: #FAF6F0;" id="products">
         <h2 class="section-title reveal" id="prod-title">Kategori Produk & Layanan Utama</h2>
         <div class="grid-3">
@@ -1041,6 +961,92 @@
         </div>
     </section>
 
+    <!-- 6. KALKULATOR & FORMULIR RFQ -->
+    <section class="section" style="background-color: #F7F3EE;" id="rfq">
+        <h2 class="section-title reveal" id="rfq-title">Formulir & Kalkulator Permintaan Penawaran (RFQ)</h2>
+        <p class="section-subtitle reveal delay-1" id="rfq-subtitle">Masukkan spesifikasi kardus yang Anda butuhkan untuk mendapatkan estimasi harga terbaik dari tim Sales kami.</p>
+
+        <div class="rfq-container reveal delay-2">
+            <form id="rfqForm">
+                <div class="rfq-grid">
+                    <div class="form-group">
+                        <label for="nama" id="lbl-nama">Nama / Perusahaan *</label>
+                        <input type="text" id="nama" required placeholder="Contoh: PT. Maju Bersama / Bpk. Budi">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telepon" id="lbl-telepon">Nomor WhatsApp *</label>
+                        <input type="tel" id="telepon" required placeholder="Contoh: 08123456789">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="panjang" id="lbl-panjang">Panjang (cm) *</label>
+                        <input type="number" id="panjang" step="0.1" min="1" required placeholder="misal: 40">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lebar" id="lbl-lebar">Lebar (cm) *</label>
+                        <input type="number" id="lebar" step="0.1" min="1" required placeholder="misal: 30">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tinggi" id="lbl-tinggi">Tinggi (cm) *</label>
+                        <input type="number" id="tinggi" step="0.1" min="1" required placeholder="misal: 25">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipeKardus" id="lbl-tipeKardus">Tipe Kardus *</label>
+                        <select id="tipeKardus" required>
+                            <option value="">-- Pilih Tipe Kardus --</option>
+                            <option value="Single Wall (3-Ply)">Single Wall (3-Ply)</option>
+                            <option value="Double Wall (5-Ply)">Double Wall (5-Ply)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipeFlute" id="lbl-tipeFlute">Tipe Flute *</label>
+                        <select id="tipeFlute" required>
+                            <option value="">-- Pilih Flute --</option>
+                            <option value="E-Flute (± 1.2 - 1.5 mm)">E-Flute (± 1.2 - 1.5 mm)</option>
+                            <option value="B-Flute (± 2.5 - 3.0 mm)">B-Flute (± 2.5 - 3.0 mm)</option>
+                            <option value="C-Flute (± 3.6 - 4.0 mm)">C-Flute (± 3.6 - 4.0 mm)</option>
+                            <option value="A-Flute (± 4.5 - 5.0 mm)">A-Flute (± 4.5 - 5.0 mm)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sablonOption" id="lbl-sablonOption">Cetak Sablon / Printing *</label>
+                        <select id="sablonOption" required onchange="toggleColorOption(this.value)">
+                            <option value="">-- Pilih Opsi Sablon --</option>
+                            <option value="Tidak">Tidak</option>
+                            <option value="Ya">Ya</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="colorGroup" style="display: none;">
+                        <label for="colorOption" id="lbl-colorOption">Pilihan Warna Sablon *</label>
+                        <select id="colorOption">
+                            <option value="Tidak Berwarna (Hitam/Putih)">Tidak Berwarna (Hitam/Putih)</option>
+                            <option value="Berwarna (Custom Color)">Berwarna (Custom Color)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jumlah" id="lbl-jumlah">Jumlah Pemesanan (Pcs) *</label>
+                        <input type="number" id="jumlah" min="1" required placeholder="misal: 1000">
+                    </div>
+
+                    <div class="form-group full-width" style="margin-top: 10px;">
+                        <button type="submit" id="btnSubmit" class="btn-submit-rfq">
+                            <span id="btn-submit-text">📲 Kirim Permintaan RFQ ke WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 7. ALUR PEMESANAN -->
     <section class="section" id="process">
         <h2 class="section-title reveal" id="process-title">Alur Pemesanan B2B</h2>
         <div class="process-steps">
@@ -1067,6 +1073,7 @@
         </div>
     </section>
 
+    <!-- 8. KONTAK & FOOTER -->
     <footer id="contact">
         <div class="footer-container">
             <div class="footer-col reveal delay-1">
