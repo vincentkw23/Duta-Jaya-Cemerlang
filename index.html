@@ -11,14 +11,22 @@
     <meta name="keywords" content="pabrik kardus semarang, produsen karton box, corrugated box semarang, kardus industri, kardus custom, cv duta jaya cemerlang">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph / WhatsApp Preview Tags -->
+    <!-- Open Graph / WhatsApp / Facebook Preview Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vincentkw23.github.io/Duta-Jaya-Cemerlang/">
     <meta property="og:title" content="CV. Duta Jaya Cemerlang - Pabrik Karton Box Semarang">
     <meta property="og:description" content="Solusi kemasan kardus corrugated berkualitas tinggi untuk kebutuhan industri & pabrik skala besar. Siap melayani pengiriman ke seluruh Pulau Jawa.">
     <meta property="og:image" content="https://vincentkw23.github.io/Duta-Jaya-Cemerlang/Tampak-Depan-DJC.webp">
 
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vincentkw23.github.io/Duta-Jaya-Cemerlang/">
+    <meta property="twitter:title" content="CV. Duta Jaya Cemerlang - Pabrik Karton Box Semarang">
+    <meta property="twitter:description" content="Solusi kemasan kardus corrugated berkualitas tinggi untuk kebutuhan industri & pabrik skala besar.">
+    <meta property="twitter:image" content="https://vincentkw23.github.io/Duta-Jaya-Cemerlang/Tampak-Depan-DJC.webp">
+
     <style>
+        /* CSS Reset & Variable Warna Nuansa Cokelat Kardus */
         :root {
             --primary-kraft: #8C6239;
             --dark-kraft: #5C3D1E;
@@ -53,6 +61,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        /* Top Bar */
         .top-bar {
             background-color: var(--dark-kraft);
             color: var(--text-white);
@@ -108,6 +117,7 @@
             color: var(--text-white);
         }
 
+        /* Header / Nav */
         header {
             background-color: var(--text-white);
             padding: 10px 5%;
@@ -172,6 +182,7 @@
             background-color: #1EBE5B;
         }
 
+        /* Hero Section */
         .hero {
             background: linear-gradient(rgba(92, 61, 30, 0.85), rgba(92, 61, 30, 0.85)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
@@ -263,7 +274,7 @@
             margin: 8px auto 0 auto;
         }
 
-        /* Styling Formulir RFQ / Kalkulator */
+        /* --- STYLING KALKULATOR RFQ --- */
         .rfq-container {
             max-width: 800px;
             margin: 0 auto;
@@ -355,7 +366,9 @@
         }
 
         @media (min-width: 768px) {
-            .about-image { min-width: 300px; }
+            .about-image {
+                min-width: 300px;
+            }
         }
 
         .about-image img {
@@ -372,7 +385,9 @@
         }
 
         @media (min-width: 768px) {
-            .about-text { min-width: 300px; }
+            .about-text {
+                min-width: 300px;
+            }
         }
 
         .about-text p {
@@ -398,7 +413,9 @@
             transition: transform 0.3s ease;
         }
 
-        .gallery-card:hover { transform: translateY(-5px); }
+        .gallery-card:hover {
+            transform: translateY(-5px);
+        }
 
         .gallery-img-box {
             height: 170px;
@@ -487,7 +504,9 @@
             transition: transform 0.3s ease;
         }
 
-        .spec-card:hover .spec-img-box img { transform: scale(1.04); }
+        .spec-card:hover .spec-img-box img {
+            transform: scale(1.04);
+        }
 
         .spec-content {
             padding: 14px;
@@ -552,7 +571,9 @@
             margin-bottom: 8px;
         }
 
-        .card p { font-size: 12.5px; }
+        .card p {
+            font-size: 12.5px;
+        }
 
         .process-steps {
             display: flex;
@@ -573,7 +594,9 @@
             transition: transform 0.3s ease;
         }
 
-        .step-box:hover { transform: translateY(-4px); }
+        .step-box:hover {
+            transform: translateY(-4px);
+        }
 
         .step-number {
             background: var(--primary-kraft);
@@ -594,7 +617,9 @@
             margin-bottom: 4px;
         }
 
-        .step-box p { font-size: 12px; }
+        .step-box p {
+            font-size: 12px;
+        }
 
         footer {
             background-color: var(--dark-kraft);
@@ -616,7 +641,9 @@
             font-size: 14.5px;
         }
 
-        .footer-col p { font-size: 12.5px; }
+        .footer-col p {
+            font-size: 12.5px;
+        }
 
         .footer-bottom {
             text-align: center;
@@ -626,6 +653,7 @@
             color: #C2B2A3;
         }
 
+        /* --- PENYESUAIAN KHUSUS LAYAR HP (MOBILE RESPONSIVE) --- */
         @media (max-width: 768px) {
             .top-bar {
                 justify-content: center;
@@ -669,11 +697,25 @@
                 padding: 8px;
             }
 
-            .hero h1 { font-size: 22px; }
-            .hero p { font-size: 13.5px; }
-            .stat-item { flex: 1 1 40%; }
-            .step-box { flex: 1 1 45%; }
-            .rfq-container { padding: 20px 15px; }
+            .hero h1 {
+                font-size: 22px;
+            }
+
+            .hero p {
+                font-size: 13.5px;
+            }
+
+            .stat-item {
+                flex: 1 1 40%;
+            }
+
+            .step-box {
+                flex: 1 1 45%;
+            }
+
+            .rfq-container {
+                padding: 20px 15px;
+            }
         }
 
         .reveal {
@@ -770,41 +812,41 @@
         </div>
     </section>
 
-    <!-- FORMULIR RFQ & KALKULATOR INTERAKTIF -->
+    <!-- FORMULIR & KALKULATOR RFQ INTERAKTIF -->
     <section class="section" style="background-color: #F7F3EE;" id="rfq">
-        <h2 class="section-title reveal">Formulir & Kalkulator Permintaan Penawaran (RFQ)</h2>
-        <p class="section-subtitle reveal delay-1">Masukkan spesifikasi kardus yang Anda butuhkan untuk mendapatkan estimasi harga terbaik dari tim Sales kami.</p>
+        <h2 class="section-title reveal" id="rfq-title">Formulir & Kalkulator Permintaan Penawaran (RFQ)</h2>
+        <p class="section-subtitle reveal delay-1" id="rfq-subtitle">Masukkan spesifikasi kardus yang Anda butuhkan untuk mendapatkan estimasi harga terbaik dari tim Sales kami.</p>
 
         <div class="rfq-container reveal delay-2">
             <form id="rfqForm">
                 <div class="rfq-grid">
                     <div class="form-group">
-                        <label for="nama">Nama / Perusahaan *</label>
+                        <label for="nama" id="lbl-nama">Nama / Perusahaan *</label>
                         <input type="text" id="nama" required placeholder="Contoh: PT. Maju Bersama / Bpk. Budi">
                     </div>
                     
                     <div class="form-group">
-                        <label for="telepon">Nomor WhatsApp *</label>
+                        <label for="telepon" id="lbl-telepon">Nomor WhatsApp *</label>
                         <input type="tel" id="telepon" required placeholder="Contoh: 08123456789">
                     </div>
 
                     <div class="form-group">
-                        <label for="panjang">Panjang (cm) *</label>
+                        <label for="panjang" id="lbl-panjang">Panjang (cm) *</label>
                         <input type="number" id="panjang" step="0.1" min="1" required placeholder="misal: 40">
                     </div>
 
                     <div class="form-group">
-                        <label for="lebar">Lebar (cm) *</label>
+                        <label for="lebar" id="lbl-lebar">Lebar (cm) *</label>
                         <input type="number" id="lebar" step="0.1" min="1" required placeholder="misal: 30">
                     </div>
 
                     <div class="form-group">
-                        <label for="tinggi">Tinggi (cm) *</label>
+                        <label for="tinggi" id="lbl-tinggi">Tinggi (cm) *</label>
                         <input type="number" id="tinggi" step="0.1" min="1" required placeholder="misal: 25">
                     </div>
 
                     <div class="form-group">
-                        <label for="tipeKardus">Tipe Kardus *</label>
+                        <label for="tipeKardus" id="lbl-tipeKardus">Tipe Kardus *</label>
                         <select id="tipeKardus" required>
                             <option value="">-- Pilih Tipe Kardus --</option>
                             <option value="Single Wall (3-Ply)">Single Wall (3-Ply)</option>
@@ -813,7 +855,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="tipeFlute">Tipe Flute *</label>
+                        <label for="tipeFlute" id="lbl-tipeFlute">Tipe Flute *</label>
                         <select id="tipeFlute" required>
                             <option value="">-- Pilih Flute --</option>
                             <option value="E-Flute (± 1.2 - 1.5 mm)">E-Flute (± 1.2 - 1.5 mm)</option>
@@ -824,7 +866,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="sablonOption">Cetak Sablon / Printing *</label>
+                        <label for="sablonOption" id="lbl-sablonOption">Cetak Sablon / Printing *</label>
                         <select id="sablonOption" required onchange="toggleColorOption(this.value)">
                             <option value="">-- Pilih Opsi Sablon --</option>
                             <option value="Tidak">Tidak</option>
@@ -833,7 +875,7 @@
                     </div>
 
                     <div class="form-group" id="colorGroup" style="display: none;">
-                        <label for="colorOption">Pilihan Warna Sablon *</label>
+                        <label for="colorOption" id="lbl-colorOption">Pilihan Warna Sablon *</label>
                         <select id="colorOption">
                             <option value="Tidak Berwarna (Hitam/Putih)">Tidak Berwarna (Hitam/Putih)</option>
                             <option value="Berwarna (Custom Color)">Berwarna (Custom Color)</option>
@@ -841,13 +883,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="jumlah">Jumlah Pemesanan (Pcs) *</label>
+                        <label for="jumlah" id="lbl-jumlah">Jumlah Pemesanan (Pcs) *</label>
                         <input type="number" id="jumlah" min="1" required placeholder="misal: 1000">
                     </div>
 
                     <div class="form-group full-width" style="margin-top: 10px;">
                         <button type="submit" id="btnSubmit" class="btn-submit-rfq">
-                            <span>📲 Kirim Permintaan RFQ ke WhatsApp</span>
+                            <span id="btn-submit-text">📲 Kirim Permintaan RFQ ke WhatsApp</span>
                         </button>
                     </div>
                 </div>
@@ -1091,8 +1133,8 @@
     </footer>
 
     <script>
-        // Smooth Scroll Animations
-        document.addEventListener("DOMContentLoaded", function () {
+        // Check & Set Animation Active Status safely
+        function initScrollAnimation() {
             const reveals = document.querySelectorAll(".reveal");
             const revealOnScroll = new IntersectionObserver(function (entries) {
                 entries.forEach(entry => {
@@ -1100,9 +1142,15 @@
                         entry.target.classList.add("active");
                     }
                 });
-            }, { threshold: 0.15 });
+            }, { threshold: 0.1 });
 
-            reveals.forEach(reveal => revealOnScroll.observe(reveal));
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            initScrollAnimation();
         });
 
         // Toggle Pilihan Warna Sablon
@@ -1123,8 +1171,9 @@
             e.preventDefault();
 
             const btnSubmit = document.getElementById('btnSubmit');
+            const btnText = document.getElementById('btn-submit-text');
             btnSubmit.disabled = true;
-            btnSubmit.innerHTML = '<span>⏳ Memproses & Menyimpan Data...</span>';
+            btnText.innerText = '⏳ Memproses & Menyimpan Data...';
 
             const nama = document.getElementById('nama').value.trim();
             const telepon = document.getElementById('telepon').value.trim();
@@ -1182,12 +1231,12 @@
             // 3. Reset Tombol & Buka WhatsApp
             setTimeout(function() {
                 btnSubmit.disabled = false;
-                btnSubmit.innerHTML = '<span>📲 Kirim Permintaan RFQ ke WhatsApp</span>';
+                btnText.innerText = '📲 Kirim Permintaan RFQ ke WhatsApp';
                 window.open(whatsappURL, '_blank');
             }, 800);
         });
 
-        // Multi Language Switcher
+        // Multi-Language Translation Data
         const translations = {
             id: {
                 "top-address": "📍 Jl. Gebang Anom Raya No.16, Sarirejo, Genuk, Semarang",
@@ -1202,7 +1251,98 @@
                 "btn-wa-header": "Hubungi Sales (WA)",
                 "hero-title": "Pabrik & Produsen Karton Box Industri Terpercaya",
                 "hero-desc": "Solusi kemasan kardus corrugated berkualitas tinggi untuk kebutuhan industri & pabrik skala besar. Siap melayani pengiriman ke seluruh Pulau Jawa.",
-                "hero-btn": "Hitung Estimasi & Minta RFQ"
+                "hero-btn": "Hitung Estimasi & Minta RFQ",
+                "stat-years-unit": "Tahun",
+                "stat-years-desc": "Pengalaman (Sejak 1995)",
+                "stat-area-desc": "Luas Area Pabrik",
+                "stat-region-title": "Pulau Jawa",
+                "stat-region-desc": "Jangkauan Pengiriman",
+                "stat-b2b-unit": "Industri",
+                "stat-b2b-desc": "Spesialis Pemesanan Besar",
+                "about-title": "Tentang CV. Duta Jaya Cemerlang",
+                "about-p1": "Didirikan sejak tahun 1995, <strong>CV. Duta Jaya Cemerlang</strong> telah berpengalaman selama lebih dari tiga dekade dalam memenuhi kebutuhan kemasan kardus (<em>corrugated box</em>) berkualitas tinggi di Indonesia.",
+                "about-p2": "Berlokasi strategis di kawasan industri Genuk, Semarang, kami mengoperasikan fasilitas pabrik seluas ± 5.000 m² yang dilengkapi dengan armada logistik serta fasilitas produksi modern untuk menangani pesanan partai besar.",
+                "about-p3": "Kami melayani pembuatan berbagai jenis karton box, mulai dari kemasan standar industri, kardus custom, hingga pengerjaan cetak (printing). Kami berkomitmen menjadi mitra pengemasan B2B yang presisi, efisien, dan tepat waktu.",
+                "rfq-title": "Formulir & Kalkulator Permintaan Penawaran (RFQ)",
+                "rfq-subtitle": "Masukkan spesifikasi kardus yang Anda butuhkan untuk mendapatkan estimasi harga terbaik dari tim Sales kami.",
+                "lbl-nama": "Nama / Perusahaan *",
+                "lbl-telepon": "Nomor WhatsApp *",
+                "lbl-panjang": "Panjang (cm) *",
+                "lbl-lebar": "Lebar (cm) *",
+                "lbl-tinggi": "Tinggi (cm) *",
+                "lbl-tipeKardus": "Tipe Kardus *",
+                "lbl-tipeFlute": "Tipe Flute *",
+                "lbl-sablonOption": "Cetak Sablon / Printing *",
+                "lbl-colorOption": "Pilihan Warna Sablon *",
+                "lbl-jumlah": "Jumlah Pemesanan (Pcs) *",
+                "btn-submit-text": "📲 Kirim Permintaan RFQ ke WhatsApp",
+                "gallery-title": "Fasilitas & Mesin Produksi Modern",
+                "gallery-subtitle": "Didukung oleh armada mesin pabrik yang siap memproses pesanan kardus skala besar dengan presisi tinggi.",
+                "m1-title": "Mesin Slitter & Creasing",
+                "m1-desc": "Memotong dan memberikan garis lipatan pada lembaran corrugated secara presisi.",
+                "m2-title": "Mesin Cetak & Printing",
+                "m2-desc": "Pencetakan logo dan branding perusahaan dengan hasil warna yang jelas.",
+                "m3-title": "Mesin Pon (Die-Cut)",
+                "m3-desc": "Pembuatan kardus bentuk custom dengan pola potongan yang detail dan rapi.",
+                "m4-title": "Mesin Tali (Strapping)",
+                "m4-desc": "Pengikatan bundel kardus rapi untuk keamanan penyimpanan dan pengiriman.",
+                "m5-title": "Mesin Jahit (Stitching)",
+                "m5-desc": "Penyambungan sudut kardus tebal/heavy-duty untuk ketahanan ekstra kuat.",
+                "spec-title": "Panduan Material & Spesifikasi Kardus",
+                "spec-subtitle": "Pelajari tipe konstruksi dan jenis gelombang kardus untuk menemukan pilihan terbaik sesuai kebutuhan produk industri Anda.",
+                "wall-subheading": "1. Tipe Lapisan Kardus (Wall Type)",
+                "sw-title": "Single Wall (3-Ply)",
+                "sw-badge": "1 Gelombang + 2 Liner",
+                "sw-desc": "Konstruksi kardus dengan 1 lapisan gelombang (*flute*) di antara 2 kertas rata. Sangat ringan dan ekonomis.",
+                "sw-li1": "<strong>Penggunaan:</strong> Kemasan ritel, box suku cadang ringan, e-commerce, dan inner box.",
+                "sw-li2": "<strong>Beban Ideal:</strong> Ringan hingga Sedang (< 15-20 kg).",
+                "dw-title": "Double Wall (5-Ply)",
+                "dw-badge": "2 Gelombang + 3 Liner",
+                "dw-desc": "Menggabungkan 2 lapisan gelombang (kombinasi B-Flute & C-Flute) untuk ketahanan ekstra keras.",
+                "dw-li1": "<strong>Penggunaan:</strong> Master box logistik, pengiriman barang berat, & tumpukan gudang tinggi.",
+                "dw-li2": "<strong>Beban Ideal:</strong> Sedang hingga Sangat Berat (> 20-50 kg).",
+                "flute-subheading": "2. Jenis Gelombang (Flute Type)",
+                "ef-badge": "Ketebalan: ± 1.2 - 1.5 mm",
+                "ef-desc": "Gelombang mikro paling tipis dengan kerapatan tinggi. Memberikan permukaan yang sangat rata untuk hasil cetak yang halus.",
+                "ef-li1": "Permukaan halus cocok untuk cetakan printing presisi.",
+                "ef-li2": "Ideal untuk mailer box, wadah makanan, & box kosmetik.",
+                "bf-badge": "Ketebalan: ± 2.5 - 3.0 mm",
+                "bf-desc": "Memiliki ketahanan tusukan yang baik serta permukaan cetak yang rapi. Tipe sedang yang sangat fleksibel.",
+                "bf-li1": "Tahan lipatan dan tekanan langsung.",
+                "bf-li2": "Biasa digunakan untuk box die-cut, kemasan arsip, dan makanan.",
+                "cf-badge": "Ketebalan: ± 3.6 - 4.0 mm",
+                "cf-desc": "Gelombang paling umum yang digunakan untuk shipping box. Memiliki keunggulan daya tumpuk (stacking strength).",
+                "cf-li1": "Paling populer untuk Master Karton Box industri.",
+                "cf-li2": "Bantalan peredam benturan yang sangat efektif.",
+                "af-badge": "Ketebalan: ± 4.5 - 5.0 mm",
+                "af-desc": "Gelombang paling tebal dengan daya redam benturan (shock absorption) paling maksimal di kelasnya.",
+                "af-li1": "Bantalan sangat tebal untuk barang rentan pecah.",
+                "af-li2": "Cocok untuk produk kaca, barang pecah belah, dan komponen rentan.",
+                "prod-title": "Kategori Produk & Layanan Utama",
+                "p1-title": "Karton Box Master (Standard A1)",
+                "p1-desc": "Kemasan luar / karton box tebal untuk proteksi pengiriman barang industri dan distribusi manufaktur.",
+                "p2-title": "Kardus Custom Size & Die-Cut",
+                "p2-desc": "Pembuatan kardus dengan ukuran dan bentuk khusus (potongan presisi) sesuai spesifikasi produk Anda.",
+                "p3-title": "Inner Packaging & Partisi",
+                "p3-desc": "Perlengkapan sekunder seperti sekat/partisi kardus dan layer corrugated untuk keamanan ekstra produk di dalam box.",
+                "p4-title": "Flexo & Custom Printing Logo",
+                "p4-desc": "Layanan cetak logo dan identitas perusahaan pada kardus untuk standar branding profesional maupun ekspor.",
+                "process-title": "Alur Pemesanan B2B",
+                "step1-title": "Konsultasi Spec",
+                "step1-desc": "Penentuan ukuran (P x L x T), jenis bahan/flute, dan kuantitas MOQ.",
+                "step2-title": "Penawaran & Sampel",
+                "step2-desc": "Pemberian estimasi harga resmi dan pembuatan sampel box.",
+                "step3-title": "Produksi Massal",
+                "step3-desc": "Proses cetak dan pemotongan cepat di pabrik Genuk, Semarang.",
+                "step4-title": "Pengiriman Logistik",
+                "step4-desc": "Pengiriman armada langsung ke lokasi pabrik/gudang Anda di Pulau Jawa.",
+                "footer-about": "Pabrik dan produsen kemasan kardus corrugated terpercaya sejak tahun 1995.",
+                "footer-contact-title": "Kontak & Alamat Pabrik",
+                "footer-address": "📍 Jl. Gebang Anom Raya No.16, Sarirejo, Kec. Genuk, Kota Semarang, Jawa Tengah 50124",
+                "footer-phone": "📞 Telepon: (024) 6591606",
+                "footer-hours-title": "Jam Operasional & Layanan",
+                "footer-hours": "🕒 Senin - Sabtu: 08.00 - 16.00 WIB",
+                "footer-area": "🚚 Area Pengiriman: Seluruh Pulau Jawa"
             },
             en: {
                 "top-address": "📍 Jl. Gebang Anom Raya No.16, Sarirejo, Genuk, Semarang",
@@ -1217,7 +1357,98 @@
                 "btn-wa-header": "Contact Sales (WA)",
                 "hero-title": "Trusted Industrial Corrugated Box Manufacturer",
                 "hero-desc": "High-quality corrugated packaging solutions for large-scale industrial & manufacturing needs. Serving delivery across Java Island.",
-                "hero-btn": "Calculate Estimate & Request RFQ"
+                "hero-btn": "Calculate Estimate & Request RFQ",
+                "stat-years-unit": "Years",
+                "stat-years-desc": "Experience (Since 1995)",
+                "stat-area-desc": "Factory Area Size",
+                "stat-region-title": "Java Island",
+                "stat-region-desc": "Delivery Coverage",
+                "stat-b2b-unit": "Industrial",
+                "stat-b2b-desc": "Bulk Order Specialist",
+                "about-title": "About CV. Duta Jaya Cemerlang",
+                "about-p1": "Established in 1995, <strong>CV. Duta Jaya Cemerlang</strong> has over three decades of experience in fulfilling high-quality corrugated box needs in Indonesia.",
+                "about-p2": "Strategically located in Genuk Industrial Estate, Semarang, we operate a ± 5,000 m² factory equipped with a logistics fleet and modern production facilities for large volume orders.",
+                "about-p3": "We manufacture various corrugated boxes, from standard industrial packaging to custom die-cut boxes and flexo printing. We are committed to being a precise, efficient, and punctual B2B packaging partner.",
+                "rfq-title": "Quotation Request Form & RFQ Calculator",
+                "rfq-subtitle": "Enter your cardboard specifications to get the best price estimate from our Sales team.",
+                "lbl-nama": "Name / Company *",
+                "lbl-telepon": "WhatsApp Number *",
+                "lbl-panjang": "Length (cm) *",
+                "lbl-lebar": "Width (cm) *",
+                "lbl-tinggi": "Height (cm) *",
+                "lbl-tipeKardus": "Box Type *",
+                "lbl-tipeFlute": "Flute Type *",
+                "lbl-sablonOption": "Printing / Logo *",
+                "lbl-colorOption": "Printing Color Choice *",
+                "lbl-jumlah": "Order Quantity (Pcs) *",
+                "btn-submit-text": "📲 Send RFQ Request to WhatsApp",
+                "gallery-title": "Modern Factory Facilities & Machinery",
+                "gallery-subtitle": "Supported by factory machinery fleets ready to process large-scale corrugated box orders with high precision.",
+                "m1-title": "Slitter & Creasing Machine",
+                "m1-desc": "Precision cutting and creasing lines for corrugated sheets.",
+                "m2-title": "Printing Machine",
+                "m2-desc": "Company logo and branding printing with clear color definition.",
+                "m3-title": "Die-Cut (Pon) Machine",
+                "m3-desc": "Custom shaped box production with precise cut patterns.",
+                "m4-title": "Strapping Machine",
+                "m4-desc": "Neat strapping for box bundles ensuring storage and transport safety.",
+                "m5-title": "Stitching Machine",
+                "m5-desc": "Corner stitching for heavy-duty cardboard boxes providing extra strength.",
+                "spec-title": "Material Guide & Corrugated Specifications",
+                "spec-subtitle": "Learn about board constructions and flute types to select the best option for your industrial products.",
+                "wall-subheading": "1. Board Styles (Wall Type)",
+                "sw-title": "Single Wall (3-Ply)",
+                "sw-badge": "1 Flute + 2 Liners",
+                "sw-desc": "Corrugated board constructed with 1 fluted layer between 2 flat liners. Lightweight and cost-effective.",
+                "sw-li1": "<strong>Usage:</strong> Retail packaging, light spare part boxes, e-commerce, and inner boxes.",
+                "sw-li2": "<strong>Ideal Load:</strong> Light to Medium (< 15-20 kg).",
+                "dw-title": "Double Wall (5-Ply)",
+                "dw-badge": "2 Flutes + 3 Liners",
+                "dw-desc": "Combines 2 fluted layers (typically B-Flute & C-Flute) for extra heavy-duty protection.",
+                "dw-li1": "<strong>Usage:</strong> Logistics master boxes, heavy cargo shipping, & high warehouse stacking.",
+                "dw-li2": "<strong>Ideal Load:</strong> Medium to Very Heavy (> 20-50 kg).",
+                "flute-subheading": "2. Flute Types",
+                "ef-badge": "Thickness: ± 1.2 - 1.5 mm",
+                "ef-desc": "Thinnest micro-flute with high wave density. Provides an exceptionally smooth surface for crisp printing.",
+                "ef-li1": "Smooth surface ideal for precision flexo/offset printing.",
+                "ef-li2": "Ideal for mailer boxes, food packaging, & cosmetic boxes.",
+                "bf-badge": "Thickness: ± 2.5 - 3.0 mm",
+                "bf-desc": "Offers great puncture resistance and clean printing surface. Highly versatile medium-sized flute.",
+                "bf-li1": "Resistant to crushing and direct side pressure.",
+                "bf-li2": "Commonly used for die-cut boxes, archive boxes, and food containers.",
+                "cf-badge": "Thickness: ± 3.6 - 4.0 mm",
+                "cf-desc": "Most widely used flute for shipping boxes. Superior stacking strength and cushioning.",
+                "cf-li1": "Most popular choice for Industrial Master Boxes.",
+                "cf-li2": "Effective shock absorption for general goods.",
+                "af-badge": "Thickness: ± 4.5 - 5.0 mm",
+                "af-desc": "Thickest flute providing maximum shock absorption and compression strength.",
+                "af-li1": "Extra thick cushioning for fragile items.",
+                "af-li2": "Suitable for glassware, ceramics, and delicate industrial parts.",
+                "prod-title": "Product Categories & Key Services",
+                "p1-title": "Master Carton Box (Standard A1)",
+                "p1-desc": "Heavy-duty outer shipping boxes for industrial protection and manufacturing distribution.",
+                "p2-title": "Custom Size & Die-Cut Boxes",
+                "p2-desc": "Precision-cut corrugated boxes manufactured to your exact product dimensions and shape.",
+                "p3-title": "Inner Packaging & Partitions",
+                "p3-desc": "Secondary packaging like cardboard dividers, grid partitions, and corrugated layers for extra safety.",
+                "p4-title": "Flexo & Custom Logo Printing",
+                "p4-desc": "Custom logo and branding printing for professional domestic packaging and export standards.",
+                "process-title": "B2B Order Process",
+                "step1-title": "Spec Consultation",
+                "step1-desc": "Define dimensions (L x W x H), material grade/flute type, and MOQ.",
+                "step2-title": "Quotation & Sample",
+                "step2-desc": "Official price estimation and sample box creation for approval.",
+                "step3-title": "Mass Production",
+                "step3-desc": "Fast printing and slotting/cutting at our Genuk factory in Semarang.",
+                "step4-title": "Logistics Delivery",
+                "step4-desc": "Direct fleet delivery to your factory/warehouse anywhere across Java Island.",
+                "footer-about": "Trusted corrugated cardboard box manufacturer since 1995.",
+                "footer-contact-title": "Contact & Factory Address",
+                "footer-address": "📍 Jl. Gebang Anom Raya No.16, Sarirejo, Genuk, Semarang, Central Java 50124",
+                "footer-phone": "📞 Phone: (024) 6591606",
+                "footer-hours-title": "Operational Hours & Services",
+                "footer-hours": "🕒 Mon - Sat: 08:00 - 16:00 WIB",
+                "footer-area": "🚚 Delivery Coverage: Entire Java Island"
             },
             zh: {
                 "top-address": "📍 爪哇三宝垄格努区 Sarirejo, Jl. Gebang Anom Raya No.16",
@@ -1232,19 +1463,112 @@
                 "btn-wa-header": "联系销售 (WA)",
                 "hero-title": "值得信赖的工业瓦楞纸箱制造厂",
                 "hero-desc": "为大型工业和制造需求提供高质量瓦楞包装解决方案。支持发货至整个爪哇岛。",
-                "hero-btn": "计算估算并获取 RFQ"
+                "hero-btn": "计算估算并获取 RFQ",
+                "stat-years-unit": "年",
+                "stat-years-desc": "行业经验 (始于1995年)",
+                "stat-area-desc": "工厂占地面积",
+                "stat-region-title": "爪哇岛",
+                "stat-region-desc": "物流配送范围",
+                "stat-b2b-unit": "工业",
+                "stat-b2b-desc": "大额B2B订单专家",
+                "about-title": "关于 CV. Duta Jaya Cemerlang",
+                "about-p1": "<strong>CV. Duta Jaya Cemerlang</strong> 成立于1995年，在满足印尼高质量瓦楞纸箱（<em>Corrugated Box</em>）需求方面拥有三十多年的专业经验。",
+                "about-p2": "我们位于三宝垄格努工业区的战略位置，拥有± 5,000平方米的厂房，配备物流车队和现代生产设备，专门承接大批量订单。",
+                "about-p3": "我们生产各种瓦楞纸箱，从标准工业外箱到定制模切箱及印刷服务。我们致力于成为精准、高效、守时的B2B包装合作伙伴。",
+                "rfq-title": "报价申请表与 RFQ 计算器",
+                "rfq-subtitle": "请输入您所需的纸箱规格，以从我们的销售团队获取最佳价格估算。",
+                "lbl-nama": "姓名 / 公司名称 *",
+                "lbl-telepon": "WhatsApp 号码 *",
+                "lbl-panjang": "长度 (cm) *",
+                "lbl-lebar": "宽度 (cm) *",
+                "lbl-tinggi": "高度 (cm) *",
+                "lbl-tipeKardus": "纸箱类型 *",
+                "lbl-tipeFlute": "瓦楞类型 *",
+                "lbl-sablonOption": "印刷 / Logo *",
+                "lbl-colorOption": "印刷颜色选择 *",
+                "lbl-jumlah": "订购数量 (Pcs) *",
+                "btn-submit-text": "📲 发送 RFQ 申请至 WhatsApp",
+                "gallery-title": "现代工厂设施与生产设备",
+                "gallery-subtitle": "拥有专业工厂机械设备，随时高精度处理大批量瓦楞纸箱订单。",
+                "m1-title": "分切压痕机 (Slitter)",
+                "m1-desc": "精准裁切瓦楞纸板并压制折痕线。",
+                "m2-title": "印刷机 (Printing)",
+                "m2-desc": "清晰呈现企业 Logo 及品牌标识印刷。",
+                "m3-title": "模切机 (Die-Cut / Pon)",
+                "m3-desc": "精细制作各种异型与定制尺寸纸箱。",
+                "m4-title": "打包捆扎机 (Strapping)",
+                "m4-desc": "整齐捆扎纸箱，保障储存与运输安全。",
+                "m5-title": "订箱机 / 钉箱机 (Stitching)",
+                "m5-desc": "重型纸箱边角缝合，提供超强承重拉力。",
+                "spec-title": "材质指南与瓦楞规格",
+                "spec-subtitle": "了解纸板结构和瓦楞类型，为您的工业产品选择最佳包装方案。",
+                "wall-subheading": "1. 纸板层数类型 (Wall Type)",
+                "sw-title": "单瓦楞纸箱 (Single Wall / 3-Ply)",
+                "sw-badge": "1层瓦楞 + 2层面纸",
+                "sw-desc": "由2层平纸夹1层瓦楞组成的结构。轻巧且经济实惠。",
+                "sw-li1": "<strong>用途：</strong> 零售包装、轻型零件盒、电商快递盒及内盒。",
+                "sw-li2": "<strong>理想承重：</strong> 轻型至中型 (< 15-20 公斤)。",
+                "dw-title": "双瓦楞纸箱 (Double Wall / 5-Ply)",
+                "dw-badge": "2层瓦楞 + 3层面纸",
+                "dw-desc": "结合2层瓦楞（通常为B楞和C楞组合），提供超强抗压与防护性能。",
+                "dw-li1": "<strong>用途：</strong> 物流大外箱、重货运输及仓库高层堆叠。",
+                "dw-li2": "<strong>理想承重：</strong> 中型至重型 (> 20-50 公斤)。",
+                "flute-subheading": "2. 瓦楞类型 (Flute Type)",
+                "ef-badge": "厚度：± 1.2 - 1.5 毫米",
+                "ef-desc": "最薄的微型瓦楞，波浪密度极高。表面非常平整，印刷效果极佳。",
+                "ef-li1": "平整表面极适合精密印刷与图案呈现。",
+                "ef-li2": "适用于邮寄盒、食品盒及化妆品盒。",
+                "bf-badge": "厚度：± 2.5 - 3.0 毫米",
+                "bf-desc": "具有良好的抗刺穿性能和整洁的印刷面。非常实用的中型瓦楞。",
+                "bf-li1": "耐折叠，抗侧向直接压力。",
+                "bf-li2": "常用于模切盒、档案盒及食品外包装。",
+                "cf-badge": "厚度：± 3.6 - 4.0 毫米",
+                "cf-desc": "最常用的运输箱瓦楞。具有出色的堆码强度和缓冲性能。",
+                "cf-li1": "工业主外箱（Master Box）最受欢迎的选择。",
+                "cf-li2": "非常有效的缓冲防震效果。",
+                "af-badge": "厚度：± 4.5 - 5.0 毫米",
+                "af-desc": "最厚的瓦楞类型，提供同类中最强的缓冲防震与抗压能力。",
+                "af-li1": "超厚缓冲，专为易碎品设计。",
+                "af-li2": "适用于玻璃制品、陶瓷及精密工业零部件。",
+                "prod-title": "主要产品类别与服务",
+                "p1-title": "标准工业主外箱 (Standard A1)",
+                "p1-desc": "加厚外运输箱，为工业货物运输和制造分销 provide 强力保护。",
+                "p2-title": "定制尺寸与模切纸箱",
+                "p2-desc": "根据您的产品尺寸和形状精准切削定制的瓦楞纸箱。",
+                "p3-title": "内包装与隔板 (Partitions)",
+                "p3-desc": "纸板隔板、井字格及瓦楞垫板等二级包装，确保箱内产品双重安全。",
+                "p4-title": "柔印与定制 Logo 印刷",
+                "p4-desc": "提供纸箱Logo及企业标识印刷服务，符合国内专业及出口包装标准。",
+                "process-title": "B2B 订购流程",
+                "step1-title": "规格咨询",
+                "step1-desc": "确定纸箱尺寸（长x宽x高）、材质/瓦楞类型及起订量（MOQ）。",
+                "step2-title": "报价与打样",
+                "step2-desc": "提供官方价格预算并制作样品箱供确认。",
+                "step3-title": "批量生产",
+                "step3-desc": "在三宝垄格努工厂进行高效印刷、开槽与裁切生产。",
+                "step4-title": "物流配送",
+                "step4-desc": "自营车队直接送货至您在爪哇岛各地的工厂或仓库。",
+                "footer-about": "自1995年以来值得信赖的瓦楞纸箱生产制造厂。",
+                "footer-contact-title": "联系方式与工厂地址",
+                "footer-address": "📍 Jl. Gebang Anom Raya No.16, Sarirejo, Genuk, Semarang, Central Java 50124",
+                "footer-phone": "📞 电话：(024) 6591606",
+                "footer-hours-title": "营业时间与服务",
+                "footer-hours": "🕒 周一至周六：08:00 - 16:00 (WIB)",
+                "footer-area": "🚚 配送范围：爪哇岛全境"
             }
         };
 
         function changeLanguage(lang) {
             const data = translations[lang];
             if (!data) return;
+
             for (let key in data) {
                 const element = document.getElementById(key);
                 if (element) {
                     element.innerHTML = data[key];
                 }
             }
+            
             localStorage.setItem("preferred_lang", lang);
         }
 
